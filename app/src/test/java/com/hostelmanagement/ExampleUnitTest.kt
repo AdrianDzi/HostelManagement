@@ -1,4 +1,4 @@
-package com.adbank
+package com.hostelmanagement
 
 import org.junit.Test
 
