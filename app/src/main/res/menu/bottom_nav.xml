@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/hostel"
+        android:icon="@drawable/ic_hostel"
+        android:title="Hostel" />
+    <item
+        android:id="@+id/renting"
+        android:icon="@drawable/ic_persons_renting_rooms"
+        android:title="Renting" />
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/ic_user_settings"
+        android:title="User" />
+
+</menu>
