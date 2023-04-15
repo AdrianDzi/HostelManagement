@@ -20,9 +20,9 @@ class LoginActivity : AppCompatActivity() {
         binding.btnLoginButton.setOnClickListener {
             val email = binding.etMailLoginScreen.text.toString()
             val password = binding.etPasswordLoginScreen.text.toString()
-            if(email.isNotEmpty() && password.isNotEmpty()){
-                firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener{
-                    if(it.isSuccessful){
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
+                    if (it.isSuccessful) {
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                     } else {
@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        if(firebaseAuth.currentUser != null){
+        if (firebaseAuth.currentUser != null) {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

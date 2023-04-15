@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        replaceFragment(HostelFragment())
+        replaceFragment(HomeFragment())
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding.bnNavMainActivity.setOnItemSelectedListener {
