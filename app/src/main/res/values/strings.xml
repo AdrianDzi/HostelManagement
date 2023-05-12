@@ -13,4 +13,6 @@
     <string name="hostel_fragment">Hostel fragment</string>
     <string name="renting_fragment">Renting fragment</string>
     <string name="hostels_list">Hostels list</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -14,6 +14,10 @@
         android:icon="@drawable/ic_persons_renting_rooms"
         android:title="Renting" />
     <item
+        android:id="@+id/workers"
+        android:icon="@drawable/ic_worker"
+        android:title="Workers" />
+    <item
         android:id="@+id/user"
         android:icon="@drawable/ic_user_settings"
         android:title="User" />

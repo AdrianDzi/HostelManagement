@@ -10,6 +10,7 @@ import com.hostelmanagement.home.HomeFragment
 import com.hostelmanagement.hostel.HostelFragment
 import com.hostelmanagement.renting.RentingFragment
 import com.hostelmanagement.user.UserFragment
+import com.hostelmanagement.workers.WorkersFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -22,11 +23,13 @@ class MainActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding.bnNavMainActivity.setOnItemSelectedListener {
+
             when(it.itemId){
                 R.id.home -> replaceFragment(HomeFragment())
                 R.id.hostel -> replaceFragment(HostelFragment())
-                R.id.user -> replaceFragment(UserFragment())
                 R.id.renting -> replaceFragment(RentingFragment())
+                R.id.workers -> replaceFragment(WorkersFragment())
+                R.id.user -> replaceFragment(UserFragment())
                 else ->{
 
                 }
